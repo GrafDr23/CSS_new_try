@@ -1,0 +1,670 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.line {
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 120px;
+  gap: 0;
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+}
+
+.line.another {
+  background: #98b5d4;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+
+.line.another .line1 {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  color: white;
+  font-weight: 750;
+  font-size: 19px;
+}
+
+.line.another .line2 {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  font-size: 30px;
+  top: 45px;
+  left: 17px;
+}
+
+.line.two {
+  position: relative;
+}
+
+.line.two .line3 {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  top: 20px;
+  left: 42px;
+}
+
+.line.two .line4 {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 41px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.line.two .line4 .m {
+  color: #2264c7;
+}
+
+.line.two .line5 {
+  position: absolute;
+}
+
+.line.two .line5 {
+  display: block;
+  width: 36px;
+  height: 12px;
+  background: #9ee7f0;
+  margin: 20px 0 0 215px;
+}
+
+.line.three {
+  position: relative;
+}
+
+.line.three .line6 {
+  color: #fff;
+  position: absolute;
+  top: 18px;
+  font-size: 21px;
+  font-weight: 700;
+  left: 34px;
+}
+
+.line.three .line7 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  position: absolute;
+  top: 45px;
+  left: 32px;
+}
+
+.line.three .line7 .m {
+  color: #2264c7;
+}
+
+.line.three .line8 {
+  display: block;
+  width: 36px;
+  height: 12px;
+  background: #9ee7f0;
+  margin: 20px 0 0 215px;
+}
+
+.line.four {
+  position: relative;
+}
+
+.line.four .line9 {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  top: 18px;
+  left: 55px;
+}
+
+.line.four .line10 {
+  position: absolute;
+  font-weight: 700;
+  font-size: 37px;
+  color: #fff;
+  top: 44px;
+  left: 53px;
+}
+
+.line.four .line10 .m {
+  color: #2264c7;
+}
+
+/* УВАГА ТУТ СТРІЛКУ МАЛЮВАЛА ГПТ, ВИБАЧТЕ МЕНЕ НА ЦЕ НЕ ХВАТИЛО*/
+
+.line11 {
+  --c: #9ee7f0;
+  --w: 10px;
+  --h: 38px;
+
+  position: relative;
+  display: block;
+  width: var(--w);
+  height: var(--h);
+  background: var(--c);
+  border-radius: 0px;
+  margin: 12px auto;
+}
+.line11::before,
+.line11::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  background: var(--c);
+  border-radius: 0px;
+  transform-origin: bottom center;
+}
+.line11::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+.line11::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.line.four {
+  position: relative;
+}
+.line.four .line11 {
+  position: absolute;
+  top: 16px;
+  right: 62px;
+  margin: 0px;
+}
+
+.line.five {
+  position: relative;
+}
+
+.line12 {
+  position: absolute;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+  top: 15px;
+  right: 193px;
+}
+
+.line13 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  top: 40px;
+  left: 28px;
+}
+
+.line.five .line13 .m {
+  color: #2264c7;
+}
+
+/* УВАГА ТУТ СТРІЛКУ МАЛЮВАЛА ГПТ, ВИБАЧТЕ МЕНЕ НА ЦЕ НЕ ХВАТИЛО*/
+
+.line14 {
+  --c: #9ee7f0;
+  --w: 10px;
+  --h: 38px;
+
+  position: relative;
+  display: block;
+  width: var(--w);
+  height: var(--h);
+  background: var(--c);
+  border-radius: 0px;
+  margin: 12px auto;
+}
+.line14::before,
+.line14::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: var(--w);
+  height: var(--h);
+  background: var(--c);
+  border-radius: 0px;
+  transform-origin: bottom center;
+}
+.line14::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+.line14::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.line.five {
+  position: relative;
+}
+.line.five .line14 {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  margin: 0;
+}
+
+.photo {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+
+html,
+body {
+  font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* тут мені гпт допоміг настроїти рядки, точніше скористувався ним щоб зрозуміти як працює цей двіж*/
+
+.row4 {
+  --h: 190px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  height: var(--h);
+  gap: 0;
+}
+.row4 > .row {
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.row.first {
+  background: red;
+}
+
+img {
+  display: block;
+}
+
+.row.first {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+  border-bottom: 4.5px solid #5c7594;
+  position: relative;
+}
+
+.bar1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  top: 28px;
+  left: 40px;
+}
+
+.bar2 {
+  position: absolute;
+  color: #fff;
+  font-size: 88px;
+  font-weight: 700;
+  top: 48px;
+  left: 30px;
+}
+
+.row.second {
+  background: url("images/Screenshot_43.png") center/cover no-repeat;
+}
+
+.row.third {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+  border-bottom: 4.5px solid #5c7594;
+  position: relative;
+}
+
+.bar3 {
+  position: absolute;
+  color: #aebcc2;
+  font-size: 18px;
+  font-weight: 600;
+  top: 28px;
+  left: 43px;
+}
+
+.bar4 {
+  position: absolute;
+  color: #9ee7f0;
+  font-weight: 6000;
+  font-size: 20px;
+  top: 31px;
+  left: 180px;
+}
+
+.bar5 {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #9ee7f0;
+  margin: 20px 0 0 215px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  right: 115px;
+}
+
+.bar6 {
+  position: absolute;
+  color: #fff;
+  top: 50px;
+  left: 30px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.bar7 {
+  position: absolute;
+  color: #aebcc2;
+  top: 115px;
+  left: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.bar8 {
+  position: absolute;
+  color: #949b9e;
+  top: 115px;
+  left: 180px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.row.fourth {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+  border-bottom: 4.5px solid #5c7594;
+  position: relative;
+}
+
+.bar9 {
+  position: absolute;
+  color: #aebcc2;
+  top: 25px;
+  left: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bar10 {
+  color: #fff;
+  position: absolute;
+  top: 48px;
+  left: 40px;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.bar11 {
+  position: absolute;
+  color: #9ee7f0;
+  top: 100px;
+  left: 55px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.A {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+  border-bottom: 4.5px solid #5c7594;
+  position: relative;
+}
+
+.A1 {
+  position: absolute;
+  color: #c9f0f2;
+  font-size: 85px;
+  font-weight: 650;
+  top: 65px;
+  left: 40px;
+}
+
+.A2 {
+  position: absolute;
+  color: #c9f0f2;
+  top: 80px;
+  left: 100px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.A3 {
+  position: absolute;
+  font-size: 60px;
+  color: #c9f0f2;
+  top: 78px;
+  right: 180px;
+  font-weight: 700;
+}
+
+.A4 {
+  color: #c9f0f2;
+  font-weight: 700;
+  font-size: 50px;
+  position: absolute;
+  right: 115px;
+  top: 76px;
+}
+
+.B {
+  width: 100%;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.B1 {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: auto;
+}
+
+.B1 .column1,
+.B1 .column2 {
+  flex: 1 1 50%;
+  min-height: 0;
+  position: relative;
+}
+
+.column1 {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+}
+
+.column2 {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+}
+
+.B2 {
+  background: linear-gradient(to top, #56708c 0%, #829bbf 60%);
+  border: 4.5px solid #6f8cad;
+  border-right: 4.5px solid #5c7594;
+}
+
+.C1 {
+  color: #fff;
+  position: absolute;
+  font-size: 75px;
+  font-weight: 700;
+  top: 75px;
+}
+
+.C2 {
+  color: #aebcc2;
+  font-weight: 800;
+  font-size: 25px;
+  top: 85px;
+  left: 360px;
+  position: absolute;
+}
+
+.C3 {
+  color: #fff;
+  position: absolute;
+  top: 65px;
+  right: 45px;
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.C4 {
+  color: #aebcc2;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  top: 97px;
+  right: 60px;
+}
+
+.C5 {
+  color: #fff;
+  position: absolute;
+  font-size: 75px;
+  font-weight: 700;
+  top: 75px;
+}
+
+.C6 {
+  color: #aebcc2;
+  font-weight: 800;
+  font-size: 25px;
+  top: 85px;
+  left: 390px;
+  position: absolute;
+}
+
+.C7 {
+  color: #fff;
+  position: absolute;
+  top: 65px;
+  right: 45px;
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.C8 {
+  color: #aebcc2;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  top: 97px;
+  right: 60px;
+}
+
+.B2 {
+  position: relative;
+}
+
+.C9 {
+  color: #fff;
+  position: absolute;
+  font-size: 75px;
+  font-weight: 700;
+  left: 30px;
+  top: 50px;
+}
+
+.C10 {
+  color: #aebcc2;
+  font-weight: 800;
+  font-size: 25px;
+  position: absolute;
+  top: 60px;
+  left: 380px;
+}
+
+.C11 {
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 650;
+  top: 55px;
+  right: 40px;
+}
+
+.C12 {
+  color: #aebcc2;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  top: 85px;
+  right: 55px;
+}
+
+.C16 {
+  width: 90%;
+  height: 2px;
+  background: #404347;
+  position: absolute;
+  top: 220px;
+  left: 35px;
+}
+
+.C13 {
+  color: #9ee7f0;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 650;
+  bottom: 170px;
+  left: 40px;
+}
+
+.C14 {
+  color: #aebcc2;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 650;
+  bottom: 130px;
+  left: 40px;
+}
+
+.C15 {
+  color: #fff;
+  position: absolute;
+  right: 30px;
+  font-weight: 650;
+  font-size: 38px;
+  bottom: 145px;
+}
+
+.picture {
+   width: 100%; 
+   height: 100%; 
+}
+
+.pct1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    
+  object-position: center; 
+  display: block;
+  object-fit: contain;
+}
