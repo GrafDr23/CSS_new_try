@@ -668,3 +668,9 @@ img {
   display: block;
   object-fit: contain;
 }
+
+body{ margin:0; }
+.container{
+  max-width: 1920px;        /* або 1440 — під твій макет */
+  margin: 0 auto; 
+}
